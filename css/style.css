@@ -1,0 +1,38 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.container{
+  display:grid;
+  grid-template-areas:
+  'header header'
+  'nav nav'
+  'aside  article'
+  'footer footer'
+  ;
+  min-height: 100vh;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 20% 5% auto 10%;
+  gap:5px;
+}
+header{
+  grid-area: header;
+  background: dodgerblue;
+}
+nav{
+  grid-area:nav;
+  background: #000;
+}
+aside{
+  grid-area:aside;
+  background: #ccc;
+}
+article{
+  grid-area:article;
+  background: #eee;
+}
+footer{
+  grid-area:footer;
+  background: green;
+}
